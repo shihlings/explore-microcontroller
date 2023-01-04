@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>LED Strip - Device Experiments - Exploring the Potentials of a Microcontroller</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+        <body class="is-preload">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <h1><a href="../index.html">Capstone Portfolio</a></h1>
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Project Site Menu</h2>
+                            <ul class="links">
+                                <li><a href="../index.html">Project Home</a></li>
+                                <hr>
+                                <li><a href="../about/index.html">About This Project</a></li>
+                                <li><a href="../hardware/index.html">Hardware Design</a></li>
+                                <li><a href="index.html">Device Experiments</a></li>
+                                <li><a href="../issues/index.html">Issues & Solutions</a></li>
+                                <li><a href="../final/index.html">Final Products</a></li>
+                                <li><a href="../reflections/index.html">Project Reflections</a></li>
+                                <hr>
+                                <li><a href="../../index.html">Return to Homepage</a></li>
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+                    
+                    <!-- Wrapper -->
+                    <section id="wrapper">
+                        <header>
+                            <div class="inner">
+                                <a href="index.html" class="button small">< Back</a>
+                                <p></p>
+                                <h2>LED Strip</h2>
+                            </div>
+                        </header>
+
+                            <!-- Content -->
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h2 class="major">Introduction</h2>
+                                        <p>The LED Strip used in this test is a WS2812B LED. The LED Strip is a Programmable Input and Output (PIO) device, and it is connected to the Raspberry Pi Pico directly through GPIO/PIO ports. Device specifications can be found <a href="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf">here</a> or by clicking the button below.</p>
+                                        <p>In this test, the program gradually turns on each color of the LED Light on the LED Strip, then gradually turns off the LED Light on the LED Strip. The LED Strip can be useful for cases that require multiple LED Lights in a row and cases that require brighter LED Lights.</p>
+                                        <center><a href="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" class="button regular">Open Device Datasheet</a></center><br><br>
+                                        <h2 class="major">Demonstration</h2>
+                                        <p></p>
+                                        <p><span class="image right"><video width = 100% controls>
+                                            <source src="images/TEST_LED_Strip.mov" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                        </video></span><p>The program is initiated by the Raspberry Pi 4B (the touch screen in the upper part of the screen), and the Raspberry Pi Pico runs the program.<br><br>
+                                        The program turns on the Blue LED Lights on the LED Strip gradually first and prints "blue" on the Raspberry Pi 4B. Then, it gradually turns off the Blue LED Lights. Afterward, it gradually turns on the Red LED Lights on the LED Strip and prints "red" on the Raspberry Pi 4B. Then, it gradually turns off the Red LED Lights. Next, it gradually turns on the Green LED Lights on the LED Strip and prints "green" on the Raspberry Pi 4B. Then, it gradually turns off the Green LED Lights. After that, the program turns on all of the LED Lights on the LED Strip and prints "white" on the Raspberry Pi 4B. Finally, it gradually turns off all the lights on the LED Strip, and the program exits.<br><br>
+                                    </div>
+                                </div>
+
+                        </section>
+
+                        <!-- Footer -->
+                            <section id="footer">
+                                <div class="inner">
+                                    <h2 class="major">Get in touch</h2>
+                                    <p>Connect with me via email or social media:</p>
+                                    <ul class="contact">
+                                        <li class="icon solid fa-envelope"><a href="mailto:shihling@student.ubc.ca">shihling@student.ubc.ca</a></li>
+                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/shih-ling-shen-025a90251">Shih-Ling Shen</a></li>
+                                    </ul>
+                                    <ul class="copyright">
+                                        <h5>Shih-Ling Shen.</h5>
+                                        <h5>Class of 2022.</h5>
+                                        <p> </p>
+                                        <h5>Westview Secondary School</h5>
+                                        <h5>Maple Ridge, BC, CA</h5>
+                                        <li>&copy; Shih-Ling. All rights reserved.</li><li>Website Template: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                    </div>
+
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+                    <!-- Google tag (gtag.js) -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'G-XJFJZTRLTF');
+                    </script>
+            </body>
+        </html>

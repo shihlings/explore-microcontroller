@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Bi-weekly Reflection - October 15th, 2021 - Project Reflections - Exploring the Potentials of a Microcontroller</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <h1><a href="../index.html">Capstone Portfolio</a></h1>
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                    </header>
+
+
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Project Site Menu</h2>
+                            <ul class="links">
+                                <li><a href="../index.html">Project Home</a></li>
+                                <hr>
+                                <li><a href="../about/index.html">About This Project</a></li>
+                                <li><a href="../hardware/index.html">Hardware Design</a></li>
+                                <li><a href="../device_experiments/index.html">Device Experiments</a></li>
+                                <li><a href="../issues/index.html">Issues & Solutions</a></li>
+                                <li><a href="../final/index.html">Final Products</a></li>
+                                <li><a href="index.html">Project Reflections</a></li>
+                                <hr>
+                                <li><a href="../../index.html">Return to Homepage</a></li>
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+                    <!-- Wrapper -->
+                    <section id="wrapper">
+                        <header>
+                            <div class="inner">
+                                <a href="index.html" class="button small">< Back</a>
+                                <p></p>
+                                <h2>Bi-weekly Reflection - October 15th, 2021</h2>
+                            </div>
+                        </header>
+
+                            <!-- Content -->
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <p><b>October 15th, 2021</b></p>
+                                        <p>This week, I have completed the investigation on four devices, the LCD Display, LED Lights, LED Strip, and the PIR Sensor.</p>
+                                        <p>The LED Lights are probably the easiest device ever to program. Since there is not much function on the LED Lights, the program can only turn on and off the lights. However, it can be used with a potentiometer and adjusted its brightness later. For now, the program can locate the GPIO Pin that the LED Lights are connected to, turn it on, and turn it off.</p>
+                                        <p>The LCD Display is a more problematic device. There was the issue that it was constantly giving errors. On the other hand, the display was not clear enough to see. Although these issues were resolved eventually, programming the LCD Display was still a big task. I had to understand the I2C protocol and get the correct header file from GitHub. After that, I need to learn how to put strings on the LCD Display. It was hard, but I eventually nailed it.</p>
+                                        <p>Next, I tried out the LED Strip. The LED Strip was very power-consuming and very bright. At first, when I was assembling it, I couldn't figure out how to wire the LED Strip because it uses its protocol and has its way of reading and writing the data. I had to look up the device specifications online and understand how the shifting and numbers work to make it turn on and adjust its brightness.</p>
+                                        <p> Finally, I programmed the PIR Sensor. The PIR Sensor works very well on its own. However, I found it very hard to stop. Since it triggers the handler after detecting a motion, there is no way to stop the handler. The handler will always be running in the background and will interrupt the program whenever there is another motion detected. Therefore, the workaround for this is to assign a variable to the handler, where the handler only changes the variable but does not print it. Then when the main program needs data from the handler, it can read the variable and use it. This would allow the program to continue running while allowing the handler to do its job.</p>
+                                        <p>Overall, this week was a hard week, as it is only the first time I am programming hardware. Over the next two weeks, I will be finishing up the rest of the devices and organizing what each device can do. For now, I am all on top of my deadlines and should be on track to finish the project early next year.</p>
+                                    </div>
+                                </div>
+
+                        </section>
+
+                        <!-- Footer -->
+                            <section id="footer">
+                                <div class="inner">
+                                    <h2 class="major">Get in touch</h2>
+                                    <p>Connect with me via email or social media:</p>
+                                    <ul class="contact">
+                                        <li class="icon solid fa-envelope"><a href="mailto:shihling@student.ubc.ca">shihling@student.ubc.ca</a></li>
+                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/shih-ling-shen-025a90251">Shih-Ling Shen</a></li>
+                                    </ul>
+                                    <ul class="copyright">
+                                        <h5>Shih-Ling Shen.</h5>
+                                        <h5>Class of 2022.</h5>
+                                        <p> </p>
+                                        <h5>Westview Secondary School</h5>
+                                        <h5>Maple Ridge, BC, CA</h5>
+                                        <li>&copy; Shih-Ling. All rights reserved.</li><li>Website Template: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                    </div>
+
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+                    <!-- Google tag (gtag.js) -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'G-XJFJZTRLTF');
+                    </script>
+            </body>
+        </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Buttons - Device Experiments - Exploring the Potentials of a Microcontroller</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+        <body class="is-preload">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <h1><a href="../index.html">Capstone Portfolio</a></h1>
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Project Site Menu</h2>
+                            <ul class="links">
+                                <li><a href="../index.html">Project Home</a></li>
+                                <hr>
+                                <li><a href="../about/index.html">About This Project</a></li>
+                                <li><a href="../hardware/index.html">Hardware Design</a></li>
+                                <li><a href="index.html">Device Experiments</a></li>
+                                <li><a href="../issues/index.html">Issues & Solutions</a></li>
+                                <li><a href="../final/index.html">Final Products</a></li>
+                                <li><a href="../reflections/index.html">Project Reflections</a></li>
+                                <hr>
+                                <li><a href="../../index.html">Return to Homepage</a></li>
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+                    
+                    <!-- Wrapper -->
+                    <section id="wrapper">
+                        <header>
+                            <div class="inner">
+                                <a href="index.html" class="button small">< Back</a>
+                                <p></p>
+                                <h2>Buttons</h2>
+                            </div>
+                        </header>
+
+                            <!-- Content -->
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h2 class="major">Introduction</h2>
+                                        <p>The Button is a General-Purpose Input/Output (GPIO) device, and it is connected to the Raspberry Pi Pico directly through GPIO/PIO ports. Its legs on the top are interconnected, and the same for the bottom ones. The Button passes the current from one side to the other when it is pushed. Therefore, it can be set up by simply connecting one side to the VCC and the other to a GPIO PIN.</p>
+                                        <p>In this test, the program detects if the Button is pressed. It prints a message when the buttons are pressed.</p>
+                                        <h2 class="major">Demonstration</h2>
+                                        <p></p>
+                                        <p><span class="image right"><video width = 100% controls>
+                                            <source src="images/TEST_Button.mov" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                        </video></span><p>The program is initiated by the Raspberry Pi 4B (the touch screen in the upper part of the screen), and the Raspberry Pi Pico runs the program.<br><br>
+                                        The program prints "Button 1 pressed" when the button on the right is pressed, and prints "Button 2 pressed" when the button on the left is pressed.<br><br>
+                                        The Signal Bouncing issue was addressed during development and has been fixed at the time of recording. Details can be found by clicking here or the button below. No additional issues were encountered.
+                                        <center><a href="../issues/signal_bounce.html" class="button regular">Signal Bouncing</a></center>
+                                    </div>
+                                </div>
+
+                        </section>
+
+                        <!-- Footer -->
+                            <section id="footer">
+                                <div class="inner">
+                                    <h2 class="major">Get in touch</h2>
+                                    <p>Connect with me via email or social media:</p>
+                                    <ul class="contact">
+                                        <li class="icon solid fa-envelope"><a href="mailto:shihling@student.ubc.ca">shihling@student.ubc.ca</a></li>
+                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/shih-ling-shen-025a90251">Shih-Ling Shen</a></li>
+                                    </ul>
+                                    <ul class="copyright">
+                                        <h5>Shih-Ling Shen.</h5>
+                                        <h5>Class of 2022.</h5>
+                                        <p> </p>
+                                        <h5>Westview Secondary School</h5>
+                                        <h5>Maple Ridge, BC, CA</h5>
+                                        <li>&copy; Shih-Ling. All rights reserved.</li><li>Website Template: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                    </div>
+
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+                    <!-- Google tag (gtag.js) -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'G-XJFJZTRLTF');
+                    </script>
+            </body>
+        </html>

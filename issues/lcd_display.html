@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>LCD Display Error - Issues & Solutions - Exploring the Potentials of a Microcontroller</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 500px) {
+      .column {
+        width: 100%;
+      }
+    }
+</style>
+        <body class="is-preload">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <h1><a href="../index.html">Capstone Portfolio</a></h1>
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Project Site Menu</h2>
+                            <ul class="links">
+                                <li><a href="../index.html">Project Home</a></li>
+                                <hr>
+                                <li><a href="../about/index.html">About This Project</a></li>
+                                <li><a href="../hardware/index.html">Hardware Design</a></li>
+                                <li><a href="../device_experiments/index.html">Device Experiments</a></li>
+                                <li><a href="index.html">Issues & Solutions</a></li>
+                                <li><a href="../final/index.html">Final Products</a></li>
+                                <li><a href="../reflections/index.html">Project Reflections</a></li>
+                                <hr>
+                                <li><a href="../../index.html">Return to Homepage</a></li>
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+                    <!-- Wrapper -->
+                    <section id="wrapper">
+                        <header>
+                            <div class="inner">
+                                <a href="index.html" class="button small">< Back</a>
+                                <p></p>
+                                <h2>LCD Display Error</h2>
+                            </div>
+                        </header>
+
+                            <!-- Content -->
+                                <div class="wrapper">
+                                    <div class="inner">
+                                        <h2 class="major">Issue</h2>
+                                        <p>During code execution, the LCD Display will provide the following error randomly:</p>
+                                        <p>
+<pre><code>Traceback (most recent call last):
+    File "<stdin>", line 125, in <module>
+    File "lcd_api.py", line 151, in putstr
+    File "lcd_api.py", line 137, in putchar
+    File "pico_i2c_lcd.py", line 80, in hal_write_data
+OSError: [Errno 5] EIO</code></pre>
+                                        </p>
+                                        <h5>*This error message was reproduced by disconnecting the LCD display during runtime.</h5>
+                                        <p>At the same time, the LCD text would become dim and blurry or even have issues with displaying the correct content.</p>
+                                        <h2 class="major">Solution</h2>
+                                        <p>At first, I thought the issue was due to unstable connections. I tried swapping in new wires in the second revision of the design. However, it did not work. The issue persisted.</p>
+                                        <p>After closely monitoring the LCD Display during runtime, I discovered that the voltage change affects the LCD Display. When the RGB LED Light Strip turns on, the LCD Display becomes dim. I can barely see the text on it. Therefore, I decided to dedicate the whole pin to the LCD Display, which means it won't be sharing the same current with the other devices. It is connected to the Raspberry Pi Pico's V_BUS and GND pins directly. This would guarantee the voltage and current the LCD Display draws are stable and not affected by the other devices.</p>
+                                        <div class="row">
+                                          <div class="column">
+                                              <center><img src="images/PHOTO_LCD_Issue.jpeg" alt="Dim display. Text not clear." style="height:160px"></center>
+                                            <center><p>Dim display. Text not clear.</p></center>
+                                          </div>
+                                          <div class="column">
+                                              <center><video height=160px controls>
+                                                  <source src="images/ISSUE_LCD_Display.mov" type="video/mp4">
+                                              Your browser does not support the video tag.
+                                              </video></center>
+                                              <center><p>Dim display. Text not clear and sometimes flashing.</p></center>
+                                          </div>
+                                          <div class="column">
+                                              <center><img src="images/PHOTO_LCD_Issue_Resolved.jpeg" alt="After resolving the issue, the display is bright and clear." style="height:160px"></center>
+                                              <center><p>After resolving the issue, the display is bright and clear.</p></center>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </section>
+
+                        <!-- Footer -->
+                            <section id="footer">
+                                <div class="inner">
+                                    <h2 class="major">Get in touch</h2>
+                                    <p>Connect with me via email or social media:</p>
+                                    <ul class="contact">
+                                        <li class="icon solid fa-envelope"><a href="mailto:shihling@student.ubc.ca">shihling@student.ubc.ca</a></li>
+                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/shih-ling-shen-025a90251">Shih-Ling Shen</a></li>
+                                    </ul>
+                                    <ul class="copyright">
+                                        <h5>Shih-Ling Shen.</h5>
+                                        <h5>Class of 2022.</h5>
+                                        <p> </p>
+                                        <h5>Westview Secondary School</h5>
+                                        <h5>Maple Ridge, BC, CA</h5>
+                                        <li>&copy; Shih-Ling. All rights reserved.</li><li>Website Template: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                    </div>
+
+                <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.scrollex.min.js"></script>
+                    <script src="assets/js/browser.min.js"></script>
+                    <script src="assets/js/breakpoints.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <script src="assets/js/main.js"></script>
+                    <!-- Google tag (gtag.js) -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'G-XJFJZTRLTF');
+                    </script>
+            </body>
+        </html>
