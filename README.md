@@ -44,3 +44,6 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+## Acknowlegements
+1. [404 Error Page](https://shihlings.github.io/explore-microcontroller/404.html) is sourced from [tsparticles/404-templates](https://github.com/tsparticles/404-templates).
