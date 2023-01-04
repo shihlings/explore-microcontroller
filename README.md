@@ -1,5 +1,5 @@
 # Exploring the Potentials of a Microcontroller
-This repository is now read only as the Capstone Project is now complete. See [the project website](https://shihlings.github.io/explore=microcontroller) for more information regarding this repository and project.
+This repository is now read only as the Capstone Project is now complete. See [the project website](https://shihlings.github.io/explore-microcontroller) for more information regarding this repository and project.
 
 ### Continuations of the project
 See [shihlings/rpi-pico-robot](https://github.com/shihlings/rpi-pico-robot) for new projects on the Raspberry Pi Pico. See [shihlings/arduino-uno](https://github.com/shihlings/arduino-uno) for new projects on the Arduino Uno.
