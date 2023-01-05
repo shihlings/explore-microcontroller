@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body class="is-preload">
 
@@ -25,26 +26,23 @@
                         </nav>
                     </header>
 
-                <!-- Menu -->
-                <nav id="menu">
-                    <div class="inner">
-                        <h2>Project Site Menu</h2>
-                        <ul class="links">
-                            <li><a href="../index.html">Project Home</a></li>
-                            <hr>
-                            <li><a href="../about/index.html">About This Project</a></li>
-                            <li><a href="../hardware/index.html">Hardware Design</a></li>
-                            <li><a href="../device_experiments/index.html">Device Experiments</a></li>
-                            <li><a href="../issues/index.html">Issues & Solutions</a></li>
-                            <li><a href="../final/index.html">Final Products</a></li>
-                            <li><a href="index.html">Project Reflections</a></li>
-                            <hr>
-                            <li><a href="../../index.html">Return to Homepage</a></li>
-                        </ul>
-                        <a href="#" class="close">Close</a>
-                    </div>
-                </nav>
-                    
+                    <!-- Menu -->
+                        <nav id="menu">
+                            <div class="inner">
+                                <h2>Project Site Menu</h2>
+                                
+                                <div id="nav-placeholder"></div>
+                                
+                            <a href="#" class="close">Close</a>
+                            </div>
+                        </nav>
+
+                        <script>
+                        $(function(){
+                          $("#nav-placeholder").load("https://shihlings.github.io/explore-microcontroller/menu.html");
+                        });
+                        </script>
+
                     <!-- Banner -->
                         <section id="banner">
                             <div class="inner">
