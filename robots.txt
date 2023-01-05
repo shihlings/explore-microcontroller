@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /template
 Disallow: /404
-Disallow: /menu
+Disallow: /modules
 Sitemap: https://shihlings.github.io/explore-microcontroller/sitemap.xml

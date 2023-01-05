@@ -20,7 +20,7 @@
 
                 <!-- Header -->
                     <header id="header" class="alt">
-                        <h1><a href="index.html">Capstone Portfolio</a></h1>
+                        <div id="header-placeholder"></div>
                         <nav>
                             <a href="#menu">Menu</a>
                         </nav>
@@ -36,12 +36,6 @@
                         <a href="#" class="close">Close</a>
                         </div>
                     </nav>
-
-                    <script>
-                    $(function(){
-                      $("#nav-placeholder").load("https://shihlings.github.io/explore-microcontroller/menu.html");
-                    });
-                    </script>
 
                     <!-- Banner -->
                         <section id="banner">
@@ -82,12 +76,6 @@
                         <section id="footer">
                             <div class="inner" id="footer-placeholder">
                             </div>
-                            
-                            <script>
-                            $(function(){
-                              $("#footer-placeholder").load("https://shihlings.github.io/explore-microcontroller/footer.html");
-                            });
-                            </script>
                         </section>
                 </div>
 
@@ -106,6 +94,24 @@
                   gtag('js', new Date());
 
                   gtag('config', 'G-XJFJZTRLTF');
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#header-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/header.html");
+                });
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#nav-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/menu.html");
+                });
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#footer-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/footer.html");
+                });
                 </script>
         </body>
     </html>
