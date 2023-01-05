@@ -20,29 +20,23 @@
 
                 <!-- Header -->
                     <header id="header">
-                        <h1><a href="../index.html">Capstone Portfolio</a></h1>
+                        <div id="header-placeholder"></div>
                         <nav>
                             <a href="#menu">Menu</a>
                         </nav>
                     </header>
-
-                    <!-- Menu -->
-                        <nav id="menu">
-                            <div class="inner">
-                                <h2>Project Site Menu</h2>
                                 
-                                <div id="nav-placeholder"></div>
-                                
-                            <a href="#" class="close">Close</a>
-                            </div>
-                        </nav>
+                <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Project Site Menu</h2>
+                            
+                            <div id="nav-placeholder"></div>
+                            
+                        <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
 
-                        <script>
-                        $(function(){
-                          $("#nav-placeholder").load("https://shihlings.github.io/explore-microcontroller/menu.html");
-                        });
-                        </script>
-                
                 <!-- Wrapper -->
                     <section id="wrapper">
                         <header>
@@ -78,43 +72,46 @@
 
                         </section>
 
-                        <!-- Footer -->
-                            <section id="footer">
-                                <div class="inner">
-                                    <h2 class="major">Get in touch</h2>
-                                    <p>Connect with me via email or social media:</p>
-                                    <ul class="contact">
-                                        <li class="icon solid fa-envelope"><a href="mailto:shihling@student.ubc.ca">shihling@student.ubc.ca</a></li>
-                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/shih-ling-shen-025a90251">Shih-Ling Shen</a></li>
-                                    </ul>
-                                    <ul class="copyright">
-                                        <h5>Shih-Ling Shen.</h5>
-                                        <h5>Class of 2022.</h5>
-                                        <p> </p>
-                                        <h5>Westview Secondary School</h5>
-                                        <h5>Maple Ridge, BC, CA</h5>
-                                        <li>&copy; Shih-Ling. All rights reserved.</li><li>Website Template: <a href="http://html5up.net">HTML5 UP</a></li>
-                                    </ul>
-                                </div>
-                            </section>
+                    <!-- Footer -->
+                        <section id="footer">
+                            <div class="inner" id="footer-placeholder">
+                            </div>
+                        </section>
+                </div>
 
-                    </div>
+            <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
 
-                <!-- Scripts -->
-                    <script src="assets/js/jquery.min.js"></script>
-                    <script src="assets/js/jquery.scrollex.min.js"></script>
-                    <script src="assets/js/browser.min.js"></script>
-                    <script src="assets/js/breakpoints.min.js"></script>
-                    <script src="assets/js/util.js"></script>
-                    <script src="assets/js/main.js"></script>
-                    <!-- Google tag (gtag.js) -->
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
-                    <script>
-                      window.dataLayer = window.dataLayer || [];
-                      function gtag(){dataLayer.push(arguments);}
-                      gtag('js', new Date());
-
-                      gtag('config', 'G-XJFJZTRLTF');
-                    </script>
-            </body>
-        </html>
+                  gtag('config', 'G-XJFJZTRLTF');
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#header-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/header.html");
+                });
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#nav-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/menu.html");
+                });
+                </script>
+                
+                <script>
+                $(function(){
+                  $("#footer-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/footer.html");
+                });
+                </script>
+        </body>
+    </html>
