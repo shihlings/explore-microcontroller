@@ -1,3 +1,11 @@
+<!-- Template Scripts -->
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/jquery.min.js"></script>
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/jquery.scrollex.min.js"></script>
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/browser.min.js"></script>
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/breakpoints.min.js"></script>
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/util.js"></script>
+<script src="https://shihlings.github.io/explore-microcontroller/assets/js/main.js"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJFJZTRLTF"></script>
 <script>
@@ -6,6 +14,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-XJFJZTRLTF');
+</script>
+
+<!-- Header Injection -->
+<script>
+$(function(){
+  $("#head-meta-placeholder").load("https://shihlings.github.io/explore-microcontroller/modules/header.html");
+});
 </script>
 
 <!-- Title Bar Injection -->
